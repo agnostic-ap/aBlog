@@ -1,19 +1,28 @@
+/*
+ * @Author: gaotian dc23byte@163.com
+ * @Date: 2024-02-27 03:06:10
+ * @LastEditors: gaotian dc23byte@163.com
+ * @LastEditTime: 2024-03-03 15:01:48
+ * @FilePath: /aBlog/data/siteMetadata.js
+ * @Description: 
+ */
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'Aldrin-Blog',
+  author: 'Aldrin',
+  headerTitle: 'Aldrin-Blog',
+  description: "Personal blog, aimed at documenting and sharing one's development ideas, experiences, and knowledge repository.",
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://localhost:3000',
+  siteRepo: '',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
+  mastodon: 'https://mastodon.social/',
+  email: 'dc23byte@gmail.com',
   github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
+  // twitter: 'https://twitter.com/Twitter',
+  twitter: 'https://twitter.com/AgnosticAp51293',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',

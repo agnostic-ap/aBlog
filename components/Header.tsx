@@ -1,6 +1,14 @@
+/*
+ * @Author: gaotian dc23byte@163.com
+ * @Date: 2024-02-27 03:06:10
+ * @LastEditors: gaotian dc23byte@163.com
+ * @LastEditTime: 2024-02-27 04:35:37
+ * @FilePath: /aBlog/components/Header.tsx
+ * @Description:
+ */
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
+import Logo from '@/data/logo-1.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
@@ -12,9 +20,7 @@ const Header = () => {
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
-            <div className="mr-3">
-              <Logo />
-            </div>
+            <div className="mr-3">{<Logo />}</div>
             {typeof siteMetadata.headerTitle === 'string' ? (
               <div className="hidden h-6 text-2xl font-semibold sm:block">
                 {siteMetadata.headerTitle}
