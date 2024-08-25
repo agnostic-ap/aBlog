@@ -1,3 +1,11 @@
+/*
+ * @Author: gaotian dc23byte@163.com
+ * @Date: 2024-02-27 03:06:10
+ * @LastEditors: gaotian dc23byte@163.com
+ * @LastEditTime: 2024-03-23 13:33:45
+ * @FilePath: /aBlog/components/social-icons/index.tsx
+ * @Description:
+ */
 import {
   Mail,
   Github,
@@ -8,6 +16,7 @@ import {
   Mastodon,
   Threads,
   Instagram,
+  Wechat,
 } from './icons'
 
 const components = {
@@ -20,6 +29,7 @@ const components = {
   mastodon: Mastodon,
   threads: Threads,
   instagram: Instagram,
+  wechat: Wechat,
 }
 
 type SocialIconProps = {

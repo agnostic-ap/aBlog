@@ -1,3 +1,11 @@
+/*
+ * @Author: gaotian dc23byte@163.com
+ * @Date: 2024-02-27 03:06:10
+ * @LastEditors: gaotian dc23byte@163.com
+ * @LastEditTime: 2024-03-23 13:48:11
+ * @FilePath: /aBlog/app/tags/page.tsx
+ * @Description:
+ */
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import { slug } from 'github-slugger'
@@ -15,7 +23,7 @@ export default async function Page() {
       <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
         <div className="space-x-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:border-r-2 md:px-6 md:text-6xl md:leading-14">
-            Tags
+            标签
           </h1>
         </div>
         <div className="flex max-w-lg flex-wrap">

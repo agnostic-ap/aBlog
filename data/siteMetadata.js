@@ -2,7 +2,7 @@
  * @Author: gaotian dc23byte@163.com
  * @Date: 2024-02-27 03:06:10
  * @LastEditors: gaotian dc23byte@163.com
- * @LastEditTime: 2024-03-03 15:01:48
+ * @LastEditTime: 2024-03-16 16:15:03
  * @FilePath: /aBlog/data/siteMetadata.js
  * @Description: 
  */
@@ -11,8 +11,9 @@ const siteMetadata = {
   title: 'Aldrin-Blog',
   author: 'Aldrin',
   headerTitle: 'Aldrin-Blog',
-  description: "Personal blog, aimed at documenting and sharing one's development ideas, experiences, and knowledge repository.",
-  language: 'en-us',
+  // description: "Personal blog, aimed at documenting and sharing one's development ideas, experiences, and knowledge repository.",
+  description: "Alwasy like this.",
+  language: 'zh-cn',
   theme: 'system', // system, dark or light
   siteUrl: 'https://localhost:3000',
   siteRepo: '',
@@ -28,7 +29,7 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com',
   threads: 'https://www.threads.net',
   instagram: 'https://www.instagram.com',
-  locale: 'en-US',
+  locale: 'zh-cn',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.

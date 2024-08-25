@@ -1,8 +1,20 @@
+/*
+ * @Author: gaotian dc23byte@163.com
+ * @Date: 2024-02-27 03:06:10
+ * @LastEditors: gaotian dc23byte@163.com
+ * @LastEditTime: 2024-03-04 05:40:39
+ * @FilePath: /aBlog/next.config.js
+ * @Description: 
+ */
 const { withContentlayer } = require('next-contentlayer')
-
+const createNextIntlPlugin = require('next-intl/plugin')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
+
+const withNextIntl = createNextIntlPlugin(
+  './i18n.ts'
+)
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
@@ -54,11 +66,15 @@ const securityHeaders = [
   },
 ]
 
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
+
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 module.exports = () => {
-  const plugins = [withContentlayer, withBundleAnalyzer]
+
+  const plugins = [withContentlayer, withBundleAnalyzer, withNextIntl]
   return plugins.reduce((acc, next) => next(acc), {
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
@@ -73,7 +89,7 @@ module.exports = () => {
         },
       ],
     },
-    async headers() {
+    async headers () {
       return [
         {
           source: '/(.*)',
@@ -91,3 +107,8 @@ module.exports = () => {
     },
   })
 }
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {}
+
+// module.exports = withNextIntl(nextConfig)

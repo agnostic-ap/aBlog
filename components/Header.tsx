@@ -2,7 +2,7 @@
  * @Author: gaotian dc23byte@163.com
  * @Date: 2024-02-27 03:06:10
  * @LastEditors: gaotian dc23byte@163.com
- * @LastEditTime: 2024-02-27 04:35:37
+ * @LastEditTime: 2024-03-04 05:51:57
  * @FilePath: /aBlog/components/Header.tsx
  * @Description:
  */
@@ -18,6 +18,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between py-10">
       <div>
+        {/* <h1>{t('title')}</h1> */}
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
             <div className="mr-3">{<Logo />}</div>

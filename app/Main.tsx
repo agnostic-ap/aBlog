@@ -2,7 +2,7 @@
  * @Author: gaotian dc23byte@163.com
  * @Date: 2024-02-27 03:06:10
  * @LastEditors: gaotian dc23byte@163.com
- * @LastEditTime: 2024-03-03 15:08:10
+ * @LastEditTime: 2024-03-23 13:35:32
  * @FilePath: /aBlog/app/Main.tsx
  * @Description:
  */
@@ -90,9 +90,7 @@ export default function Home({ posts }) {
         </div>
       )}
       {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
+        <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}
     </>
   )
